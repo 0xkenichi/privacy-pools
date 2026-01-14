@@ -18,8 +18,10 @@ fi
 if [ -f "./powers_of_tau/powersOfTau28_hez_final_$TAU.ptau" ]; then
     echo powersOfTau28_hez_final_$TAU.ptau found!
 else
-    wget https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_$TAU.ptau \
-        -O ./powers_of_tau/powersOfTau28_hez_final_$TAU.ptau
+    echo Downloading powersOfTau28_hez_final_$TAU.ptau...
+    curl -L https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_$TAU.ptau \
+        -o ./powers_of_tau/powersOfTau28_hez_final_$TAU.ptau
+    echo Download complete!
 fi
 
 if [ ! -f "./circuits/out/${TARGET}_0000.zkey" ]

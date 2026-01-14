@@ -1,0 +1,170 @@
+Error: Parse error on line 1:
+pragma circom 2.0.0;include "../n
+---------------^
+Expecting 'EOF', 'function', 'IDENTIFIER', '(', ')', 'template', ',', 'if', 'else', 'for', ';', 'while', 'do', 'compute', 'return', 'include', '{', '}', '==>', '-->', '===', '?', ':', '||', '&&', '|', '^', '&', '==', '!=', '<=', '>=', '<', '>', '<<', '>>', '+', '-', '*', '/', '\\', '%', '**', '++', '--', '!', '~', 'DECNUMBER', 'HEXNUMBER', 'var', 'signal', 'component', '[', ']', got '.'
+    at Parser.parseError (/opt/homebrew/lib/node_modules/circom/parser/jaz.js:620:21)
+    at Parser.parse (/opt/homebrew/lib/node_modules/circom/parser/jaz.js:687:22)
+    at constructionPhase (/opt/homebrew/lib/node_modules/circom/src/construction_phase.js:79:22)
+    at compile (/opt/homebrew/lib/node_modules/circom/src/compiler.js:71:5)
+    at run (/opt/homebrew/lib/node_modules/circom/cli.js:119:11)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/circom/cli.js:140:1)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+Parse error on line 1:
+pragma circom 2.0.0;include "../n
+---------------^
+Expecting 'EOF', 'function', 'IDENTIFIER', '(', ')', 'template', ',', 'if', 'else', 'for', ';', 'while', 'do', 'compute', 'return', 'include', '{', '}', '==>', '-->', '===', '?', ':', '||', '&&', '|', '^', '&', '==', '!=', '<=', '>=', '<', '>', '<<', '>>', '+', '-', '*', '/', '\\', '%', '**', '++', '--', '!', '~', 'DECNUMBER', 'HEXNUMBER', 'var', 'signal', 'component', '[', ']', got '.'
+withdraw_from_subset circuit compiled!
+./scripts/gen_keys.sh: line 21: wget: command not found
+generating zkp proving and verifying keys!
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './powers_of_tau/powersOfTau28_hez_final_14.ptau'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async newZKey (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:3168:50)
+    at async Object.zkeyNew [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13410:5)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:517:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './powers_of_tau/powersOfTau28_hez_final_14.ptau'
+}
+withdraw_from_subset groth16 setup complete!
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './circuits/out/withdraw_from_subset_0000.zkey'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async phase2contribute (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5008:45)
+    at async Object.zkeyContribute [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13536:5)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:517:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './circuits/out/withdraw_from_subset_0000.zkey'
+}
+withdraw_from_subset contribution complete!
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './circuits/out/withdraw_from_subset_final.zkey'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async zkeyExportVerificationKey (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5412:28)
+    at async Object.zkeyExportVKey [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13074:18)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:519:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './circuits/out/withdraw_from_subset_final.zkey'
+}
+withdraw_from_subset verifier json exported!
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './circuits/out/withdraw_from_subset_final.zkey'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async zkeyExportVerificationKey (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5412:28)
+    at async exportSolidityVerifier (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5595:29)
+    at async Object.zkeyExportSolidityVerifier [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13130:26)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:519:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './circuits/out/withdraw_from_subset_final.zkey'
+}
+withdraw_from_subset verifier template contract exported!
+Traceback (most recent call last):
+  File "/Users/mac/HOUSE/privacy-pools/./scripts/export_verifier.py", line 14, in <module>
+    with open(f'./circuits/out/{target}_verifier.sol', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './circuits/out/withdraw_from_subset_verifier.sol'
+withdraw_from_subset verifier contract exported!
+Error: Parse error on line 1:
+pragma circom 2.0.0;include "../n
+---------------^
+Expecting 'EOF', 'function', 'IDENTIFIER', '(', ')', 'template', ',', 'if', 'else', 'for', ';', 'while', 'do', 'compute', 'return', 'include', '{', '}', '==>', '-->', '===', '?', ':', '||', '&&', '|', '^', '&', '==', '!=', '<=', '>=', '<', '>', '<<', '>>', '+', '-', '*', '/', '\\', '%', '**', '++', '--', '!', '~', 'DECNUMBER', 'HEXNUMBER', 'var', 'signal', 'component', '[', ']', got '.'
+    at Parser.parseError (/opt/homebrew/lib/node_modules/circom/parser/jaz.js:620:21)
+    at Parser.parse (/opt/homebrew/lib/node_modules/circom/parser/jaz.js:687:22)
+    at constructionPhase (/opt/homebrew/lib/node_modules/circom/src/construction_phase.js:79:22)
+    at compile (/opt/homebrew/lib/node_modules/circom/src/compiler.js:71:5)
+    at run (/opt/homebrew/lib/node_modules/circom/cli.js:119:11)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/circom/cli.js:140:1)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+Parse error on line 1:
+pragma circom 2.0.0;include "../n
+---------------^
+Expecting 'EOF', 'function', 'IDENTIFIER', '(', ')', 'template', ',', 'if', 'else', 'for', ';', 'while', 'do', 'compute', 'return', 'include', '{', '}', '==>', '-->', '===', '?', ':', '||', '&&', '|', '^', '&', '==', '!=', '<=', '>=', '<', '>', '<<', '>>', '+', '-', '*', '/', '\\', '%', '**', '++', '--', '!', '~', 'DECNUMBER', 'HEXNUMBER', 'var', 'signal', 'component', '[', ']', got '.'
+withdraw_from_subset_by_address circuit compiled!
+./scripts/gen_keys.sh: line 21: wget: command not found
+generating zkp proving and verifying keys!
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './powers_of_tau/powersOfTau28_hez_final_14.ptau'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async newZKey (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:3168:50)
+    at async Object.zkeyNew [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13410:5)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:517:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './powers_of_tau/powersOfTau28_hez_final_14.ptau'
+}
+withdraw_from_subset_by_address groth16 setup complete!
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './circuits/out/withdraw_from_subset_by_address_0000.zkey'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async phase2contribute (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5008:45)
+    at async Object.zkeyContribute [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13536:5)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:517:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './circuits/out/withdraw_from_subset_by_address_0000.zkey'
+}
+withdraw_from_subset_by_address contribution complete!
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './circuits/out/withdraw_from_subset_by_address_final.zkey'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async zkeyExportVerificationKey (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5412:28)
+    at async Object.zkeyExportVKey [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13074:18)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:519:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './circuits/out/withdraw_from_subset_by_address_final.zkey'
+}
+withdraw_from_subset_by_address verifier json exported!
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: ENOENT: no such file or directory, open './circuits/out/withdraw_from_subset_by_address_final.zkey'
+    at async Object.open (node:internal/fs/promises:642:25)
+    at async open (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/opt/homebrew/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/opt/homebrew/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async zkeyExportVerificationKey (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5412:28)
+    at async exportSolidityVerifier (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:5595:29)
+    at async Object.zkeyExportSolidityVerifier [as action] (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:13130:26)
+    at async clProcessor (/opt/homebrew/lib/node_modules/snarkjs/build/cli.cjs:519:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './circuits/out/withdraw_from_subset_by_address_final.zkey'
+}
+withdraw_from_subset_by_address verifier template contract exported!
+Traceback (most recent call last):
+  File "/Users/mac/HOUSE/privacy-pools/./scripts/export_verifier.py", line 14, in <module>
+    with open(f'./circuits/out/{target}_verifier.sol', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './circuits/out/withdraw_from_subset_by_address_verifier.sol'
+withdraw_from_subset_by_address verifier contract exported!
